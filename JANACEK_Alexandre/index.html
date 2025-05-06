@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./asset/img/samoyede.jpg" type="image/x-icon">
+    <meta name="description"
+        content="Développpeuse web chinoise super reconnue dans le monde, je vous fais un site web en 10 minutes montre en main">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/backToTop.css">
+    <link rel="stylesheet" href="./asset/css/slide.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- hero-->
+        <div class="hero">
+            <nav class="menu">
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <ul>
+                    <li> <a href="#moi">A propos de moi</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#devis">Devis</a></li>
+                </ul>
+            </nav>
+            <div class="display">
+                <div class="title">
+                    <h1>Création de sites web sur mesure</h1>
+                </div>
+                <a href="#devis"> <input class="ask_devis" type="button" value="Demander un devis"></a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <!-- presentation -->
+        <section id="moi">
+            <div class="moi-container">
+                <div class="moi-content">
+                    <div class="photo-container">
+                        <img class="photo_pres" src="./asset/img/chinoise.jpg" alt="Photo de moi">
+                    </div>
+                    <div class="text-container">
+                        <h1>A propos de moi</h1>
+                        <div class="pres">
+                            <h2>30 ans d'expérience dans le développement !</h2>
+                            <p>Je code depuis que j'ai 2 ans et demi avec ma tablette</p>
+                            <p class="long-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error velit corporis ea, quia
+                                itaque
+                                iure iusto, a veniam. <br><br> Dolores repellat ducimus consectetur fugiat ullam!
+                                Quisquam
+                                ipsam nostrum consequuntur voluptatibus, vel aliquam, <br> asperiores harum minima
+                                nesciunt
+                                accusamus sequi repellendus enim veniam veritatis. Illum quam temporibus deserunt
+                                voluptatibus
+                                voluptatum facere. Eaque, aspernatur?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio -->
+        <h1>Mon Portfolio</h1>
+
+        <section id="slider" class="container">
+            <ul class="slider-wrapper">
+                <li class="current-slide">
+                    <img src="./asset/img/samoyede.jpg" title="Site Vitrine - Thème Animalier" alt="Site Vitrine - Thème Animalier">
+        
+                    <div class="caption">
+                        <h2 class="slider-title">Site Vitrine - Thème Animalier</h2>
+                        <p>Conception de sites vitrines pour présenter votre activité liée aux animaux, éleveurs, toiletteurs, etc. Un site web chaleureux et professionnel.</p>
+                    </div>
+                </li>
+        
+                <li>
+                    <img src="./asset/img/bateau.jpg" title="Site E-commerce - Thème Nautique" alt="Site E-commerce - Thème Nautique">
+        
+                    <div class="caption">
+                        <h2 class="slider-title">Boutique en ligne - Thème Nautique</h2>
+                        <p>Vendez vos produits nautiques en ligne 24h/24, 7j/7. Une solution complète pour gérer vos ventes d'articles pour la navigation et la mer.</p>
+                    </div>
+                </li>
+        
+                <li>
+                    <img src="./asset/img/arbre.jpg" title="Site Sur Mesure - Thème Nature" alt="Site Sur Mesure - Thème Nature">
+        
+                    <div class="caption">
+                        <h2 class="slider-title">Site Sur Mesure - Thème Nature</h2>
+                        <p>Un site web unique, conçu spécialement pour répondre à vos besoins et atteindre vos objectifs. Idéal pour les entreprises eco-responsable.</p>
+                    </div>
+                </li>
+        
+                <li>
+                    <img src="./asset/img/oiseau.jpg" title="Audit et Refonte - Thème Nature" alt="Audit et Refonte - Thème Nature">
+                    <div class="caption">
+                        <h2 class="slider-title">Audit et Refonte de Site Web - Thème Nature</h2>
+                        <p>Optimisation de votre site existant. Amélioration du design, de l'expérience utilisateur et du référencement pour les entreprises nature et environnement.</p>
+                    </div>
+                </li>
+            </ul>
+        
+            <div class="slider-shadow"></div>
+        
+            <ul id="control-buttons" class="control-buttons"></ul>
+        </section>
+        
+        
+
+
+
+
+
+
+        <!-- demande de devis -->
+
+        <section id="devis">
+            <h1>Envie de réaliser votre projet ?</h1>
+            <h3>N'hésitez pas à me contacter via le formulaire ci-dessous :</h3>
+            <div class="contact">
+                <form class="contact-form">
+                    <label for="firstName">Prénom :</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Nom :</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </section>
+        <!-- Bouton retour en haut -->
+        <button id="backToTopBtn"></button>
+
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Site réalisé par <span>Moi</span> - 2025</p>
+    </footer>
+
+    <script src="./asset/js/script.js"></script>
+    <script src="./asset/js/backToTop.js"></script>
+    <script src="./asset/js/slide.js"></script>
+</body>
+
+</html>

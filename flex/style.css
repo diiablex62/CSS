@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+/* section */
+section {
+  display: flex;
+  flex-wrap: wrap;
+ align-items: center;
+  justify-content: center;
+
+  /* flex-direction: column; */
+  border: 1px solid black;
+  height: 800px;
+}
+
+article {
+  width: 300px;
+  height: 300px;
+  background-color: chocolate;
+  margin: 10px;
+}
